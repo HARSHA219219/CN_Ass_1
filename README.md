@@ -1,6 +1,6 @@
-# DNS Resolver using PCAP, Client-Server Model
+# CN_Assignment_1
 
-This project implements a simple DNS resolver using a client-server model in Python.  
+This assignment implements a simple DNS resolver using a client-server model in Python.  
 The client parses DNS query packets from a `.pcap` file, and the server responds with resolved IPs from a custom IP pool.
 
 1. Download the sample packet capture file `7.pcap` from the following link:  
@@ -16,3 +16,15 @@ The client parses DNS query packets from a `.pcap` file, and the server responds
 4. Open a terminal and start the server:
    ```bash
     python server.py
+5. Open another terminal and run the client:
+   ```bash
+   python client.py
+6. You should be able to see these resolutions:
+
+Custom Header	Domain	Resolved IP
+18041600	wikipedia.org	192.168.1.6
+18041601	reddit.com	192.168.1.7
+18041602	apple.com	192.168.1.8
+18041603	twitter.com	192.168.1.9
+18041604	yahoo.com	192.168.1.10
+18041605	linkedin.com	192.168.1.6
